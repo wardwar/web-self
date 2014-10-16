@@ -5,6 +5,12 @@ body{
 	margin:0;
 }
 
+/*global*/
+/*===========================================================*/
+
+
+/*serction*/
+/*===========================================================*/
 #home {
 	background: #2B2B2B url(../../images/war-home-background.jpg) center 0 repeat fixed; 
 	-webkit-background-size: cover;
@@ -26,3 +32,4 @@ body{
   width: 100%; 
   position: relative; 
 }
+
