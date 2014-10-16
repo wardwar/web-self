@@ -1,0 +1,28 @@
+* { margin: 0; padding: 0; }
+
+body{
+	padding: 0;
+	margin:0;
+}
+
+#home {
+	background: #2B2B2B url(../../images/war-home-background.jpg) center 0 repeat fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	min-width: 100%;
+	height: 800px;
+   	min-height: 500px;
+	position:relative;
+	overflow: hidden;
+}
+
+#about { 
+  background: #2B2B2B; 
+  min-height: 500px; 
+  height: 800px; 
+  margin: 0 auto; 
+  width: 100%; 
+  position: relative; 
+}
