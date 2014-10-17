@@ -59,6 +59,7 @@ header .banner {
 
 header .banner-text { width: 100%; }
 header .banner-text h1 {
+    visibility: hidden;
    font: 90px/1.1em 'Lobster';
    color: #fff;
    letter-spacing: -2px;
@@ -66,12 +67,13 @@ header .banner-text h1 {
    text-shadow: 0px 1px 3px rgba(0, 0, 0, .8);
 }
 header .banner-text h3 { 
-   font: 20px/1.9em 'helvetica';
+  visibility: hidden;
+   font: 20px/1.9em 'Source Sans Pro', sans-serif;
    color: #ECECEC;
+   line-height: 30px;
    margin: 0 auto;
    width: 70%;
    text-shadow: 0px 1px 2px rgba(0, 0, 0, .5);
-   line-height: 30px;
 }
 header .banner-text h3 span,
 header .banner-text h3 a {
@@ -79,6 +81,7 @@ header .banner-text h3 a {
 }
 header .banner-text hr {
    width: 60%;
+   visibility: hidden;
    margin: 18px auto 24px auto;
    border-color: #11ABB0;
    border-color: rgba(0, 0, 0, .2);
@@ -86,6 +89,7 @@ header .banner-text hr {
 
 /* header social links */
 header .social {
+  visibility: hidden;
    margin: 24px 0;
    padding: 0;
    font-size: 30px;
@@ -99,7 +103,7 @@ header .social li {
 header .social li a { color: #fff; }
 header .social li a:hover { color: #11ABB0; }
 
-/* scrolldown link */
+/* link */
 header .scrolldown a {
    position: absolute;
    bottom: 30px;
@@ -119,7 +123,20 @@ header .scrolldown a {
    -o-transition: all .3s ease-in-out;
    transition: all .3s ease-in-out;
 }
+
+header .scrolldown {
+  visibility: hidden;
+}
 header .scrolldown a:hover { color: #11ABB0; }
+
+/* ------------------------------------------------------------------ */
+/* animate
+/* ------------------------------------------------------------------ */
+.animated {
+  visibility: visible !important;
+}
+
+
 
 /* primary navigation
 --------------------------------------------------------------------- */
@@ -327,86 +344,101 @@ ul#nav li.current a { color: #F06000; }
    border-radius: 3px 0 0 3px;
 }
 
-.photoshop {
-  	width: 60%;
+.php {
+  	width: 85%;
   	-moz-animation: photoshop 2s ease;
   	-webkit-animation: photoshop 2s ease;
 }
-.illustrator {
-  	width: 55%;
+.html5 {
+  	width: 70%;
   	-moz-animation: illustrator 2s ease;
   	-webkit-animation: illustrator 2s ease;
 }
-.wordpress {
-  	width: 50%;
+.css3 {
+  	width: 67%;
   	-moz-animation: wordpress 2s ease;
   	-webkit-animation: wordpress 2s ease;
 }
-.css {
-  	width: 90%;
+.jquery {
+  	width: 40%;
   	-moz-animation: css 2s ease;
   	-webkit-animation: css 2s ease;
 }
-.html5 {
-  	width: 80%;
+.c {
+  	width: 37%;
   	-moz-animation: html5 2s ease;
   	-webkit-animation: html5 2s ease;
 }
-.jquery {
+.cpp {
+    width: 40%;
+    -moz-animation: jquery 2s ease;
+    -webkit-animation: jquery 2s ease;
+}
+.cs {
   	width: 50%;
   	-moz-animation: jquery 2s ease;
   	-webkit-animation: jquery 2s ease;
 }
 
-@-moz-keyframes photoshop {
+@-moz-keyframes php {
   0%   { width: 0px;  }
-  100% { width: 60%;  }
-}
-@-moz-keyframes illustrator {
-  0%   { width: 0px;  }
-  100% { width: 55%;  }
-}
-@-moz-keyframes wordpress {
-  0%   { width: 0px;  }
-  100% { width: 50%;  }
-}
-@-moz-keyframes css {
-  0%   { width: 0px;  }
-  100% { width: 90%;  }
+  100% { width: 85%;  }
 }
 @-moz-keyframes html5 {
   0%   { width: 0px;  }
-  100% { width: 80%;  }
+  100% { width: 70%;  }
+}
+@-moz-keyframes css3 {
+  0%   { width: 0px;  }
+  100% { width: 67%;  }
 }
 @-moz-keyframes jquery {
+  0%   { width: 0px;  }
+  100% { width: 40%;  }
+}
+@-moz-keyframes c {
+  0%   { width: 0px;  }
+  100% { width: 37%;  }
+}
+@-moz-keyframes cpp {
+  0%   { width: 0px;  }
+  100% { width: 40%;  }
+}
+@-moz-keyframes cs {
   0%   { width: 0px;  }
   100% { width: 50%;  }
 }
 
-@-webkit-keyframes photoshop {
+@-webkit-keyframes php {
   0%   { width: 0px;  }
-  100% { width: 60%;  }
-}
-@-webkit-keyframes illustrator {
-  0%   { width: 0px;  }
-  100% { width: 55%;  }
-}
-@-webkit-keyframes wordpress {
-  0%   { width: 0px;  }
-  100% { width: 50%;  }
-}
-@-webkit-keyframes css {
-  0%   { width: 0px;  }
-  100% { width: 90%;  }
+  100% { width: 85%;  }
 }
 @-webkit-keyframes html5 {
   0%   { width: 0px;  }
-  100% { width: 80%;  }
+  100% { width: 70%;  }
+}
+@-webkit-keyframes css3 {
+  0%   { width: 0px;  }
+  100% { width: 67%;  }
 }
 @-webkit-keyframes jquery {
   0%   { width: 0px;  }
+  100% { width: 40%;  }
+}
+@-webkit-keyframes c {
+  0%   { width: 0px;  }
+  100% { width: 37%;  }
+}
+@-webkit-keyframes cpp {
+  0%   { width: 0px;  }
+  100% { width: 40%;  }
+}
+@-webkit-keyframes cs {
+  0%   { width: 0px;  }
   100% { width: 50%;  }
 }
+
+
 
 /* ------------------------------------------------------------------ */
 /* e. Portfolio Section
